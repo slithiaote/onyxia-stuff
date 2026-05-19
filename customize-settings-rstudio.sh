@@ -22,9 +22,9 @@ cat << EOF > ~/.config/rstudio/rstudio-prefs.json
     "load_workspace": false,
     "save_workspace": "never",
     "restore_last_project": false,
-    "auto_save_idle_ms": 1000, # default value is 1000
-    "check_for_updates": false, # default is true
-    "rainbow_parentheses": true,
+    "auto_save_idle_ms": 1000,
+    "check_for_updates": false,
+    "rainbow_parentheses": true
 }
 EOF
 
