@@ -28,8 +28,6 @@ cat << EOF > ~/.config/rstudio/rstudio-prefs.json
 }
 EOF
 
-chown -R onyxia:users ~/.config/
-
 # num_spaces_for_tab: Number of spaces used for indentation when pressing Tab
 # insert_native_pipe_operator: Automatically insert the native R pipe operator (%>%) when typing '|>'
 # margin_column: Column number at which a margin line is displayed in the editor
@@ -42,3 +40,14 @@ chown -R onyxia:users ~/.config/
 # style_diagnostics: Enable diagnostics for style issues in the editor
 # editor_theme: Theme applied to the editor (e.g., syntax highlighting)
 # posix_terminal_shell: Default shell used in the terminal for POSIX systems
+
+cat << EOF > ~/.config/rstudio/keybindings/rstudio_bindings.json
+{
+    "insertChunk": "Ctrl+Shift+I"
+}
+EOF
+
+# insertChunk keybinding : Ctrl+Alt+I adds í on my US International keyboard
+
+rm ~/.Rprofile
+chown -R onyxia:users ~/.config/
