@@ -41,6 +41,7 @@ EOF
 # editor_theme: Theme applied to the editor (e.g., syntax highlighting)
 # posix_terminal_shell: Default shell used in the terminal for POSIX systems
 
+mkdir -p ~/.config/rstudio/keybindings
 cat << EOF > ~/.config/rstudio/keybindings/rstudio_bindings.json
 {
     "insertChunk": "Ctrl+Shift+I"
